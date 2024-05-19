@@ -3,24 +3,26 @@
 <head>
     <meta charset= "UTF-8 ">
     <meta name= "viewport" content= "width=device-width, initial-scale=1.0 ">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <title>Page Personnelle de Djibrine Abba Djarma</title>
     <style>
         Body {
-            Background-color: #f2f2f2;
             font-family: Arial, sans-serif;
             Margin: 0;
             Padding: 0;
+            list-style: none;
         }
 
         header {
             
             Text-align: center;
             Padding: 20px;
+            color: rgba(76, 88, 88, 0.699);
         }
 
         Header img {
-            Width: 250px;
-            Height: 250px;
+            Width: 200px;
+            Height: 200px;
             Border-radius: 50%;
             Margin-top: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -29,7 +31,7 @@
         Main, Header {
             Max-width: 700px;
             Margin: 20px auto;
-            Padding: 0 20px;
+            Padding: 20px 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             border-radius: 12px;
         }
@@ -40,8 +42,16 @@
 
         Section {
             Margin-bottom: 20px;
+            Margin: 20px auto;
+            Padding: 20px 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
         }
 
+        a{
+            text-decoration: none;
+            padding: 0 20px;
+        }
         Ul {
             List-style-type: none;
             Padding: 0;
@@ -59,14 +69,25 @@
             text-decoration: none;
             margin: 0 10px;
         }
+        .icon{
+            font-size: 40px;
+            color: #666;
+            padding: 10px;
+
+        }
+        div{
+            display: flex;
+            justify-content: center;
+        }
 
     </style>
 </head>
 <body>
     <header>
+        <a href="#"><i class="fas fa-home icon"></i></a>
         <h1>Djibrine Abba Djarma</h1>
-        <img src="https://drive.google.com/file/d/11XOAHRGbedFqhxDP6Op5y50ik8q5mYfC/view?usp=drive_link" alt= "Photo de Djibrine Abba Djarma ">
-        <div class="profile-links">
+        <img src="dj2.jpg" alt= "Photo de Djibrine Abba Djarma ">
+        <div>
             <a href="#">Portfolio</a>
             <a href="#">LinkedIn</a>
             <a href="#">GitHub</a> 
@@ -84,16 +105,25 @@
         <section>
             <h2>Compétences</h2>
             <ul>
-                <li>Informatique</li>
+                <p>Informatique</p>
             </ul>
         </section>
         <section>
             <h2>Projets</h2>
-            <p>Aucun projet à afficher pour le moment.</p>
+            <p>Gestion des emplois de temps</p>
+            <p>Gestion de budget personnelle</p>
+            <p>Gestion des notes</p>
         </section>
         <section>
             <h2>Coordonnées</h2>
-            <p>Adresse email : djibrineattime99@gmail.com</p>
+            <div class="profile-links">
+                <div class="social-icons">
+                    <a href="#"><i class="fas fa-envelope icon"></i></a>
+                    <a href="#"><i class="fab fa-facebook icon"></i></a>
+                    <a href="#"><i class="fab fa-twitter icon"></i></a>
+                    <a href="#"><i class="fab fa-instagram icon"></i></a>
+                    <a href="#"><i class="fab fa-linkedin icon"></i></a>
+             </div>
         </section>
     </main>
 </body>
